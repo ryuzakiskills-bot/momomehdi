@@ -24,13 +24,17 @@ export function WhatsAppCTA({ whatsapp }: WhatsAppCTAProps) {
         aria-label="Follow on Instagram"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ delay: 2.3, type: "spring", stiffness: 200 }}
-        whileHover={{ scale: 1.1 }}
+        transition={{ delay: 1.8, type: "spring", stiffness: 200 }}
+        whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-18 sm:bottom-24 right-4 sm:right-6 z-50 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center shadow-lg shadow-pink-500/30 touch-manipulation"
-        style={{ background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)" }}
+        className="fixed bottom-[74px] right-4 sm:bottom-[88px] sm:right-6 z-40 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center shadow-lg shadow-pink-600/30 touch-manipulation focus:outline-none"
+        style={{ 
+          background: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
+          right: "max(1rem, env(safe-area-inset-right))",
+          bottom: "calc(max(1rem, env(safe-area-inset-bottom)) + 58px)"
+        }}
       >
-        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
           <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
@@ -45,12 +49,16 @@ export function WhatsAppCTA({ whatsapp }: WhatsAppCTAProps) {
         aria-label="Chat on WhatsApp"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ delay: 2, type: "spring", stiffness: 200 }}
-        whileHover={{ scale: 1.1 }}
+        transition={{ delay: 1.5, type: "spring", stiffness: 200 }}
+        whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-[#25D366]/30 touch-manipulation"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-green-950/40 touch-manipulation focus:outline-none"
+        style={{
+          right: "max(1rem, env(safe-area-inset-right))",
+          bottom: "max(1rem, env(safe-area-inset-bottom))"
+        }}
       >
-        <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white fill-white" />
+        <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white fill-white shrink-0" />
         <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-[var(--color-gold)] rounded-full animate-ping" />
       </motion.a>
 
