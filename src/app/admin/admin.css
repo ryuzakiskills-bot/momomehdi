@@ -1,0 +1,39 @@
+/* src/app/admin/admin.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism card background */
+.bg-glass {
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2); /* gold border */
+}
+
+/* Gold accent utility */
+.text-gold {
+  color: #ffd700;
+}
+
+.bg-gold {
+  background-color: #ffd700;
+}
+
+.border-gold {
+  border-color: #ffd700;
+}
+
+/* Hover effect for links */
+.hover\:text-gold:hover {
+  color: #ffd700;
+}
+
+/* Sidebar width */
+.w-sidebar {
+  width: 240px;
+}
+
+/* Transition for smooth animations */
+.transition-all {
+  transition: all 0.3s ease;
+}
